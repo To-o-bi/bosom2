@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hover-container {
+            position: relative; /* Necessary for absolute positioning of the hover content */
+            }
+
+            .hover-content {
+            display: none; /* Initially hide the content */
+            position: absolute;
+            top: 100%; /* Position below the hover element */
+            left: 50%;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 200px; /* Adjust width as needed */
+            }
+
+            .hover-element:hover + .hover-content {
+            display: block; /* Show the content on hover */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="hover-container">
+        <div class="hover-element">Hover over me</div>
+        <div class="hover-content">This content will appear on hover</div>
+      </div>
+      
+</body>
+</html>
